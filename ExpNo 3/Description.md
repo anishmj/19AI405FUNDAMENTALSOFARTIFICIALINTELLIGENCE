@@ -36,7 +36,7 @@ end (for loop)
 e) push q on the closed list end (while loop)
 
 Code:
-Name: ANISH M j
+Name: ANISH M J
 Register Number:212221230005
 from collections import defaultdict
 H_dist ={}
