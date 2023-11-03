@@ -52,16 +52,20 @@ Now, the Stack becomes empty, which means we have visited all the nodes, and our
  <li>Find its Successors Or neighbors and Check whether the node is visited or not</li>
  <li>If Not Visited, add it to the STACK. Else Call The Function Again Until No more nodes needs to be visited.</li>
 </ol></B>
-<h3>Code<h3>
 
-~~~
 
-Name : ANISH M J
-Reg No : 212221230005
 
-Depth First Search uses STACK AND RECURSION
 
-#import defaultdict
+
+
+<hr>
+
+## code
+```
+Name: ANISH M J
+Register Number:212221230005
+```
+```
 from collections import defaultdict
 def dfs(graph,start,visited,path):
     path.append(start)
@@ -83,43 +87,29 @@ visited=defaultdict(bool)
 path=[]
 traversedpath=dfs(graph,start,visited,path)
 print(traversedpath)
-~~~
-
+```
 <h3>Input</h3>
+
 <hr>
-8 9 <BR>
-A B <BR>
-A C <BR>
-B E <BR>
-C D <BR>
-B D <BR>
-C G <BR>
-D F <BR>
-G F <BR>
-F H <BR>
+8 9
+A B
+A C
+B E
+C D
+B D
+C G
+D F
+G F
+F H
+
 <hr>
+
 <h3>Output</h3>
-<hr>
-['A', 'B', 'E', 'D', 'C', 'G', 'F', 'H']
 
-<hr>
+![image](https://github.com/Rakshithadevi/19AI405FUNDAMENTALSOFARTIFICIALINTELLIGENCE/assets/94165326/d342bed6-11ae-4668-8a09-f5a87ce55a70)
 
-<hr>
-<h3>Input</h3>
-<hr>
-5 5 <BR>
-0 1 <BR>
-0 2 <BR>
-0 3 <BR>
-2 3 <BR>
-2 4 <BR>
-<hr>
-<h3>Output</h3>
-<hr>
-['0', '1', '2', '3', '4']
 
-<hr>
+
 <h3>Result:</h3>
 <hr>
 <p>Thus,a Graph was constructed and implementation of Depth First Search for the same graph was done successfully.</p>
-
