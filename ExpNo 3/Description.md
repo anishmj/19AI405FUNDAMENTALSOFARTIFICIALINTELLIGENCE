@@ -1,43 +1,56 @@
-ExpNo 3 : Implement A* search algorithm for a Graph
-Aim:
-To ImplementA * Search algorithm for a Graph using Python 3.
+<h1>ExpNo 3 : Implement A* search algorithm for a Graph</h1> 
 
-Algorithm:
-// A* Search Algorithm 1. Initialize the open list 2. Initialize the closed list put the starting node on the open list (you can leave its f at zero)
-while the open list is not empty a) find the node with the least f on the open list, call it "q"
+<H3>Aim:</H3>
+<p>To ImplementA * Search algorithm for a Graph using Python 3.</p>
+<H3>Algorithm:</H3>
+// A* Search Algorithm
+1.  Initialize the open list
+2.  Initialize the closed list
+    put the starting node on the open 
+    list (you can leave its f at zero)
 
-b) pop q off the open list
+3.  while the open list is not empty
+    a) find the node with the least f on 
+       the open list, call it "q"
 
-c) generate q's 8 successors and set their parents to q
-
-d) for each successor i) if successor is the goal, stop search
-
-ii) else, compute both g and h for successor
-  successor.g = q.g + distance between 
-                      successor and q
-  successor.h = distance from goal to 
-  successor (This can be done using many 
-  ways, we will discuss three heuristics- 
-  Manhattan, Diagonal and Euclidean 
-  Heuristics)
+    b) pop q off the open list
   
-  successor.f = successor.g + successor.h
+    c) generate q's 8 successors and set their 
+       parents to q
+   
+    d) for each successor
+        i) if successor is the goal, stop search
+        
+        ii) else, compute both g and h for successor
+          successor.g = q.g + distance between 
+                              successor and q
+          successor.h = distance from goal to 
+          successor (This can be done using many 
+          ways, we will discuss three heuristics- 
+          Manhattan, Diagonal and Euclidean 
+          Heuristics)
+          
+          successor.f = successor.g + successor.h
 
-iii) if a node with the same position as 
-    successor is in the OPEN list which has a 
-   lower f than successor, skip this successor
+        iii) if a node with the same position as 
+            successor is in the OPEN list which has a 
+           lower f than successor, skip this successor
 
-iV) if a node with the same position as 
-    successor  is in the CLOSED list which has
-    a lower f than successor, skip this successor
-    otherwise, add  the node to the open list
-end (for loop)
+        iV) if a node with the same position as 
+            successor  is in the CLOSED list which has
+            a lower f than successor, skip this successor
+            otherwise, add  the node to the open list
+     end (for loop)
+  
+    e) push q on the closed list
+    end (while loop)
 
-e) push q on the closed list end (while loop)
-
-Code:
+## Code:
+```
 Name: ANISH M J
 Register Number:212221230005
+```
+```
 from collections import defaultdict
 H_dist ={}
 def aStarAlgo(start_node, stop_node):
@@ -141,10 +154,13 @@ print(H_dist)
 Graph_nodes=graph
 print(graph)
 aStarAlgo('A', 'G')
-Output:
-image
+```
+## Output:
+![image](https://github.com/Rakshithadevi/19AI405FUNDAMENTALSOFARTIFICIALINTELLIGENCE/assets/94165326/c0eba7ab-f265-4df5-87d4-ecd655853d58)
 
-image
+![image](https://github.com/Rakshithadevi/19AI405FUNDAMENTALSOFARTIFICIALINTELLIGENCE/assets/94165326/dd59aba3-6885-4982-b9cf-1a7cde5cf86b)
 
-Result:
+## Result:
 Thus,a Graph was constructed and implementation ofA* search algorithm for the same graph was done successfully.
+
+
