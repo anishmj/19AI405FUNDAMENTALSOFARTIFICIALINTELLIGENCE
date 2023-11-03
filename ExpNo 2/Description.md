@@ -68,8 +68,8 @@ Now, Queue becomes empty, So, terminate these process of iteration.
 
 ## Code:
 ```
-Name: Rajeshkannan.M
-Register Number:212221230081
+Name: ANISH M J
+Register Number:212221230005
 ```
 ```
 from collections import deque
